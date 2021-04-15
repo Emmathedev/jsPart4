@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercices Part4 - Exo 2</title>
+</head>
+<body>
+    <p>Créez une fonction qui permet d'ajouter un élément au début du tableau.</p>
+
+    <form>
+        <input type="text" id="list">
+    </form>
+    <button style="width:80px;" onclick="myList()" type="button">Voir</button>
+    <button id="" style="width:80px;" onclick="addtomyList()" type="button">Ajout</button>
+
+    <script>
+        var tableau =['banane','fraise','pomme','kiwi','poire'];
+        function addtomyList(){
+            var list = document.getElementById('list').value; //document.getElementById('') permet de récupérer l'id de l'html
+            // .value permet d'ajouter la valeur de l'input
+            tableau.unshift(list); //unshift permet de rajouter un élément avant le tableau
+            alert(list +''+' a été ajouté au tableau');
+        }
+        // affiche le tableau avec le nouvel élément rajouté
+        function myList() {
+            alert(tableau);
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercices Part4 - Exo 4</title>
+</head>
+<body>
+    <p>Afficher une modale demandant la première couleur du drapeau français. Si la réponse est bleu, afficher "Bien joué !", gérez les autres cas.</p>
+
+
+
+    <script>
+       function  answer() {
+           var answer = prompt("Quelle est la première couleur du drapeau français ? Bleu, blanc ou rouge ?");
+           if (answer == 'bleu'){
+               alert("Bravo")
+           }
+            else if(answer == 'blanc'){
+               alert('Non, blanc est en deuxième');
+           }
+           else {
+               alert('Non, rouge est en troisième');
+           }
+       }
+       answer();
+    </script>
+</body>
+</html>

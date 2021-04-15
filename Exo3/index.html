@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice Part4 - Exo3</title>
+</head>
+<body>
+    <p>Créez une fonction qui permet d'incrémenter une variable. A chaque clic sur un bouton, on affiche le nombre de clics.</p>
+    <button style="width:80px;" onclick="onClick()" type="button">Click me</button>
+    <p>Vous avez clické : <a id="clicks">0</a> fois</p>
+
+    <script>
+        var clicks = 0; //dans le p
+        function onClick() {
+            clicks += 1; //additionne puis affecte le résultat
+            document.getElementById("clicks").innerHTML = clicks; //On affiche le résultat sur la page HTML
+        };
+    </script>
+</body>
+</html>
